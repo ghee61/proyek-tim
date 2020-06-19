@@ -1,0 +1,1 @@
+// result = (loan - downPayment) * r * ((1 + r)^n) / (((1 + r)^n) - 1)
