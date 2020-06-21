@@ -6,8 +6,108 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <div class="banner">
+    <h1>rumahmurah<span id="red-dot">.</span>co</h1>  
+    <a href="#" class="menu banner-left">About</a>
+    <a href="#" class="menu banner-left">Our Services</a>
+    <a href="#" class="menu banner-left">Contact Us</a>
+    <a href="#" class="menu banner-right">Login</a>
+  </div>
 
+  <div class="box-1">
+    <div class="container">
+      <div>
+        <p class="box-1-content">Aku pingin punya rumah di</p>
+        <select name="kota" id="kota">
+          <option value="jabodetabek">Jabodetabek</option>
+          <option value="surabaya">Surabaya</option>
+          <option value="makassar">Makassar</option>
+          <option value="jayapura">Jayapura</option>
+        </select>
+        <p>.</p>
+      </div>
+      <div class="btn btn-kirim" >
+        <a href="#" onclick="submitCity()">Temukan sekarang!</a>
+      </div>
+    </div>
+  </div>
 
+  <div class="box-2">
+    <div class="container">
+      <div class = "box-2-contents box-2-left">
+        <img src="./img/undraw_buy_house_560d.svg" alt="image">
+        <p>Dengan tingkat suku bunga yang rendah, kini siapa pun bisa memiliki rumah.</p>
+        <p>Izinkan kami membantu Anda mewujudkan mimpi Anda menjadi kenyataan.</p>
+      </div>
+      <div class = "box-2-contents box-2-right">
+        <h2>Simulasi pembelian</h2>
+        <label class= "input-item" for="nilai-rumah">nilai rumah:</label>
+        <input class= "input-item" type="number" id="nilai-rumah" step="10000000" value="200000000">
+        <label class= "input-item" for="uang-muka">uang muka:</label>
+        <input class= "input-item" type="number" id="uang-muka" step="5000000" value="25000000">
+        <label class= "input-item" for="tenor">lama kontrak</label>
+        <select class= "input-item" name="tenor" id="tenor">
+          <option value="5">5 tahun</option>
+          <option value="10">10 tahun</option>
+          <option value="15">15 tahun</option>
+          <option value="20">20 tahun</option>
+        </select>
+        <label class= "input-item" for="kota">lokasi</label>
+        <select class= "input-item" name="kota" id="kota-2">
+          <option value="jabodetabek">Jabodetabek</option>
+          <option value="surabaya">Surabaya</option>
+          <option value="makassar">Makassar</option>
+          <option value="jayapura">Jayapura</option>
+        </select>
+        <div class = "btn">
+          <a class= "input-item" href="#" onclick="calcMortgage()">Hitung</a>
+        </div>
+        <div>
+          <p class= "input-item" id="text-result"></p>
+          <p class= "input-item" id="calc-result"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="box-3">
+    <div class="container slideshow-container">
+      <h1>Apa Kata Mereka</h1>
+
+        <div class="mySlides fade">
+          <img id="img1" src="./img/photo-of-woman-taking-picture-1545980.jpg" style="width:100%">
+          <div>Menjadi seorang fotografer membuat penghasilan saya tidak menentu. Tapi hal itu tidak menghambat rumahmurah.co membantu saya mendapatkan rumah ideal saya.</div>
+          <div class="source">Monita Febriyanti - Fotografer</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img id="img2" src="./img/man-wearing-blue-crew-neck-t-shirt-2379005.jpg" style="width:100%">
+          <div>Sebagai seorang pekerja kantoran dengan gaji pas-pasan, rumahmurah.co menjawab kegalauan saya untuk mencicil rumah.</div>
+          <div class="source">Rudi Priambodo - Pegawai Swasta</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img id="img3" src="./img/woman-s-in-red-sari-portrait-764529.jpg" style="width:100%">
+          <div>Saya adalah seorang <i>single parent</i> yang bekerja di sebuah perusahaan swasta dan menjadi <i>freelancer</i> sebagai sambilan. Rumahmurah.co membantu mencarikan saya rumah yang nyaman untuk keluarga kecil saya dengan harga terjangkau.</div>
+          <div class="source">Yasmin Hamid - Manajer Pemasaran dan Freelancer</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img id="img4" src="./img/woman-standing-beside-fence-2118052.jpg" style="width:100%">
+          <div class="text">Siapa bilang mahasiswa belum bisa punya rumah sendiri? Cicilan rumahmurah.co yang sangat murah membantu saya membangun masa depan.</div>
+          <div class="source">Leny Liandow - Mahasiswi</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+  </div>
+  <footer>
+    <div class = "container" style="color:white">
+      <p>Lorem Ipsum</p>
+    </div>
+  </footer>
 <script src="script.js"></script>
 </body>
 </html>
